@@ -53,10 +53,63 @@ Este projeto implementa um sistema distribuído utilizando **Java puro**, **thre
 
 > Pré-requisitos: Docker e Docker Compose instalados.
 
+### 📦 Subindo os containers
+
+1. Abra o terminal na pasta raiz do projeto.
+2. Execute o comando:
+
+```bash
+docker-compose up --build
+```
+
+### 🖥️ Executando o Cliente (Swing)
+
+1. Navegue até a pasta do cliente:
+
+   ```bash
+   cd notebook1-cliente/cliente-gui
+   ```
+
+2. Compile o programa: 
+
+   ```bash
+   javac Main.java
+   ```
+
+3. Execute o cliente:
+
+   ```bash
+   java Main
+   ```
+
+Na interface, clique em Selecionar Arquivo, escolha um arquivo .txt e veja o resultado exibido com a contagem de letras e números.
+
 ## 📸 Prints da Interface
 
 ![Imagem de Exemplo 01](assets/img01.png)
 ![Imagem de Exemplo 02](assets/img02.png)
+
+SD_TRABALHO04/
+├── notebook1-cliente/
+│   └── cliente-gui/
+│       └── Main.java
+│
+├── notebook2-servidores/
+│   ├── escravo-letras/
+│   │   └── EscravoLetras.java
+│   │
+│   ├── escravo-numeros/
+│   │   └── EscravoNumeros.java
+│   │
+│   └── mestre/
+│       └── Mestre.java
+│
+├── docker-compose.yml
+├── Dockerfile-letras
+├── Dockerfile-numeros
+├── Dockerfile-mestre
+├── LICENSE
+└── README.md
 
 ## 📄 Licença
 Este projeto está sob a licença MIT. Veja o arquivo **LICENSE** para mais detalhes.

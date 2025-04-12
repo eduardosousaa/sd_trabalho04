@@ -1,0 +1,5 @@
+FROM openjdk:11-slim
+WORKDIR /app
+COPY escravo-numeros/EscravoNumeros.java .
+RUN javac EscravoNumeros.java
+CMD ["java", "EscravoNumeros"]

@@ -1,0 +1,5 @@
+FROM openjdk:11-slim
+WORKDIR /app
+COPY escravo-letras/EscravoLetras.java .
+RUN javac EscravoLetras.java
+CMD ["java", "EscravoLetras"]
